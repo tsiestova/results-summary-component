@@ -1,0 +1,35 @@
+body {
+  font-family: "HankenGrotesk";
+}
+
+.layout {
+  padding: 0 30px;
+
+  @include breakpoint(desktop) {
+    padding: 0 39px;
+  }
+}
+
+.page__wrap {
+  background: #ecf2ff;
+  min-height: 100%;
+
+  @include breakpoint(tablet) {
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.page {
+  background-color: var(--color2);
+
+  @include breakpoint(desktop) {
+    display: flex;
+    max-width: 736px;
+    border-radius: 32px;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

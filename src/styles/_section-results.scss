@@ -1,0 +1,118 @@
+.section__results {
+  background: linear-gradient(180deg, #7755ff 0%, #6943ff 0.01%, #2f2ce9 100%);
+  box-shadow: 0 30px 60px rgba(61, 108, 236, 0.15);
+  border-radius: 0 0 32px 32px;
+  padding: 24px 0 40px 0;
+
+  @include breakpoint(desktop) {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 32px;
+  }
+
+  .layout {
+    @include breakpoint(desktop) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-self: initial;
+      height: 100%;
+      justify-content: space-around;
+    }
+  }
+}
+
+.section__results-heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: var(--color1);
+  margin-bottom: 24px;
+
+  @include breakpoint(desktop) {
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 0;
+  }
+}
+
+.personal-result__wrap {
+  width: 140px;
+  height: 140px;
+  background: linear-gradient(
+    180deg,
+    #4d21c9 0%,
+    rgba(37, 33, 201, 0) 100%,
+    rgba(37, 33, 201, 0) 100%
+  );
+  border-radius: 50%;
+  text-align: center;
+  margin: auto auto 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @include breakpoint(desktop) {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+  }
+}
+
+.result__value {
+  color: var(--color2);
+  font-size: 56px;
+  font-weight: 900;
+
+  @include breakpoint(desktop) {
+    font-weight: 800;
+    font-size: 72px;
+    line-height: 72px;
+  }
+}
+
+.result__summary {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  color: var(--color2);
+  margin-bottom: 8px;
+
+  @include breakpoint(desktop) {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 0;
+  }
+}
+
+.result__max {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: var(--color1);
+  opacity: 0.52;
+
+  @include breakpoint(desktop) {
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+.result__massage {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: var(--color1);
+  max-width: 260px;
+  margin: auto;
+
+  @include breakpoint(desktop) {
+    font-size: 18px;
+    line-height: 23px;
+    margin: 0;
+  }
+}
